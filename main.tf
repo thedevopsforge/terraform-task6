@@ -30,7 +30,7 @@ resource "aws_security_group" "math_api_sg" {
 
 resource "aws_instance" "math_api_instance" {
   ami             = "ami-050fd9796aa387c0d" # Amazon Linux 2023
-  instance_type   = "t3.micro"
+  instance_type   = "t2.small"
   key_name        = "terraform-key"
   security_groups = [aws_security_group.math_api_sg.name]
 
