@@ -17,10 +17,6 @@ jobs:
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       AWS_REGION: ${{ secrets.AWS_REGION }}
 
-    defaults:
-      run:
-        working-directory: Task6-CICD-Terraform
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
